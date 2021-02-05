@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+user = User.find(3)
+Message.create(body: "what is your age", user: user)
+user = User.find(5)
+Message.create(body: "Hi all", user: user)
